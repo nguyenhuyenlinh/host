@@ -16,7 +16,7 @@ function contentstyle01(json) {
 	s = postcontent	; a = s.indexOf("<img"); b = s.indexOf("src=\"",a); c = s.indexOf("\"",b+5); d = s.substr(b+5,c-b-5);
 	if((a!=-1)&&(b!=-1)&&(c!=-1)&&(d!="")) img[i] = d;
 
-if (i==0) {var trtd = '<div class="firstpost2"><a class="thumb" title="'+posttitle+'" href="'+posturl+'"><amp-img alt="'+posttitle+'" title="'+posttitle+'" src="http://amp.baophunuonline.org/images.php?w=s126&img='+img[i]+'" layout="responsive" height="118" width="128"></amp-img></a><h3><a title="'+posttitle+'" href="'+posturl+'">'+posttitle+"</a></h3><p>"+stripHtmlTags(postcontent,sumcont)+'... </p><div class="clear"></div></div>'; document.write(trtd); }
+if (i==0) {var trtd = '<div class="firstpost2"><a class="thumb" title="'+posttitle+'" href="'+posturl+'"><amp-img alt="'+posttitle+'" title="'+posttitle+'" src="http://amp.baophunuonline.org/images.php?w=s126&img='+img[i]+'" layout="responsive" height="118" width="128"></amp-img></a><h3><a title="'+posttitle+'" href="'+posturl+'">'+posttitle+"</a></h3><p>"+stripHtmlTags(postcontent,25)+'... </p><div class="clear"></div></div>'; document.write(trtd); }
 if (0<i) {var trtd = '<ul class="listpost"><li><h3><a title="'+posttitle+'" href="'+posturl+'">'+posttitle+"</a></h3></li></ul>'"; document.write(trtd); }
 }
 document.write('');
