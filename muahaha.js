@@ -1,4 +1,4 @@
-<script>var a=location.hostname;var e = document.getElementById('dathang-form #name');
+var a=location.hostname;var e = document.getElementById('dathang-form #name');
 function createForm()
 {
 var FORM = '<div class="form-title">Điền thông tin đặt hàng để nhận được<br/>Sản phẩm giảm cân độc đáo<br/>Green Coffee Bean với mức giá khuyến mãi đặc biệt</div>';
@@ -14,4 +14,4 @@ return FORM;
 }
   if((a!='localhost')&&(a!='green-coffee-bean.shop')) {
     var FORM=createForm();document.getElementById("dathang-form").innerHTML=FORM;
-  };</script>
+};
