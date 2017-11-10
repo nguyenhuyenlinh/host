@@ -13,6 +13,6 @@ FORM += '<div class="page-form-risk">Miễn phí giao hàng. Nếu bạn ở Hà
 return FORM;
 }
   if((a!='localhost')&&(a!='green-coffee-bean.shop')) {
-    var FORM=createForm();document.getElementById("dathang-form").innerHTML=FORM;
+  //  var FORM=createForm();document.getElementById("dathang-form").innerHTML=FORM;
     var FORM=createForm();document.getElementById("dathang-form2").innerHTML=FORM;
 };
